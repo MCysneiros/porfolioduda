@@ -131,17 +131,17 @@ html {
 }
 
 .float-text {
-	position: absolute;
-	z-index: 10;
 	color: #3e3e3d;
 	opacity: 0.7;
 	font-size: 8rem;
-	top: 15rem;
-	left: 57.5rem;
 }
 
 .aboutMe-info {
 	width: 22rem;
+	margin-bottom: 3.25rem;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
 }
 
 .portfolio {
@@ -314,4 +314,8 @@ textarea {
 
 .portfolio-text-item button:hover {
 	filter: brightness(0.9);
+}
+
+.last-text {
+	margin-right: 4rem;
 }
