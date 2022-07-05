@@ -15,19 +15,20 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="/style.css" />
-		<title>Document</title>
+		<title>Portfólio duda cysneiros</title>
 	</head>
 	<body>
+		<script src="scripts/readMore.js" defer></script>
 		<header class="header">
 			<nav class="navbar">
 				<ul class="navlist">
 					<li><a href="#home">Home </a></li>
-					<li><a href="#aboutMe">About me</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#aboutMe">Sobre mim</a></li>
+					<li><a href="#portfolio">Portfólio</a></li>
 				</ul>
 				<p>Eduarda Cysneiros</p>
 				<a href="./files/Currículo - Eduarda Cysneiros.pdf" download>
-					Download Cv</a
+					Baixar Cv</a
 				>
 			</nav>
 		</header>
@@ -35,7 +36,7 @@
 			<div class="home-container">
 				<div class="home-name">
 					<img class="circle" src="/imgs/ciriculo.svg" alt="" />
-					<h3>Hi, I’M EDUARDA CYSNEIROS</h3>
+					<h3>Ola, Eu sou EDUARDA CYSNEIROS</h3>
 				</div>
 				<img src="/imgs/avatar.png" alt="" class="avatar-img" />
 			</div>
@@ -47,7 +48,7 @@
 					<img
 						src="/imgs/aboutme.png"
 						alt="duda cysneiros photo"
-						class="avatar"
+						class="avatar-me"
 					/>
 					<ul class="footer-list">
 						<li class="footer-list-item">
@@ -70,7 +71,7 @@
 					</ul>
 				</div>
 
-				<div class="float-text"><p>ABOUT ME</p></div>
+				<div class="float-text"><p>SOBRE MIM</p></div>
 
 				<div class="aboutMe-info">
 					<p>
@@ -80,6 +81,7 @@
 						inspired by them.
 					</p>
 				</div>
+				class="content"
 			</div>
 		</section>
 
@@ -92,16 +94,62 @@
 						<img src="/imgs/1-port.png" alt="" class="portfolio-image" />
 					</div>
 					<div class="portfolio-text">
-						<p>Graphic Design</p>
-						<p>Metaphors And Visual Thinking Basic Design Project, 2020/2021</p>
-						<a href="/">more</a>
+						<strong>Design Gráfico</strong>
+
+						<div class="portfolio-text-item">
+							<p>
+								Metáforas e Pensamento Visual Projeto em Design básico,
+								2020/2021
+							</p>
+
+							<p class="content">
+								A fim de aprimorar a capacidade de síntese e representação
+								visual, bidimensional e tridimensional, com foco nas figuras de
+								estilos, foi-nos atribuído o exercício o qual partia-se de um
+								denominador comum sendo ele uma obra literária, musical ou
+								audiovisual de referência, o qual através do mesmo fossemos
+								capas de reproduzir através de uma síntese um conceito que se
+								enquadrava dentro das demais figuras de estilo, no qual
+								posteriormente o mesmo fosse materializado em duas vertentes,
+								uma bidimensional, a qual recorria uma produção plástica, seja
+								digital ou analógica, a fim de gerar uma solução visual que
+								represente o conceito escolhido, o qual seria entregue um painel
+								em formato 18x18 com em um suporte K-line de 3mm.
+							</p>
+							<button onClick="readMore(this)">Leia mais</button>
+						</div>
 					</div>
 				</div>
 				<div class="portfolio-item">
 					<div class="portfolio-text">
-						<p>Typography</p>
-						<p>Play With Typography Playing Card, Typography, 2021</p>
-						<a href="/">more</a>
+						<strong>Typography</strong>
+						<div class="portfolio-text-item">
+							<p>Jogar com Tipografia Tipografia, 2021</p>
+							<p class="content">
+								Na componente da unidade curricular de tipografia fomos
+								desafiados a confecionar um baralho de cartas, em conjunto, onde
+								cada aluno recebeu uma carta para redesenha-la, frente e verso,
+								de forma que utilizasse somente o recurso tipográfico, a fim de
+								desenvolver nossa criatividade e individualidade, mantendo
+								sempre a sua legibilidade, na qual após sua confeção, a mesma
+								pudesse ser utilizada sem nenhum constrangimento. A carta
+								designada para redesenha-la foi o 7 de Copas, no qual era
+								possível apenas a utilização de tipografia, a cor vermelha e
+								preta e seguir o padrão de tamanho 56 mm x 87 mm. Na confeção
+								desta carta foi escolhido um design mais minimalista para sua
+								frente, na qual busca a utilização de poucos elementos
+								tipográficos a fim de facilitar a leitura e entendimento da
+								mesma, onde foi utilizado letras como “i”, “L/l”, “Y”, na qual a
+								fonte tipográfica escolhida ajudou na confeção dos elementos,
+								além de explorar o uso do vazio a fim de destacar os elementos
+								na mesma. A cor escolhida, vermelho, dá-se pela cor original
+								referente ao naipe designado. Na parte de trás da carta foi
+								feito um padrão com a utilização de duas letras “A” e “V”,
+								alternando o direção dos mesmas a qual atribuiu uma ideia de
+								movimento ao padrão criado.
+							</p>
+							<button onClick="readMore(this)">Leia mais</button>
+						</div>
 					</div>
 					<div class="portfolio-img-container">
 						<img src="/imgs/2-port.png" alt="" class="portfolio-image" />
@@ -110,27 +158,98 @@
 				</div>
 				<div class="portfolio-item">
 					<div class="portfolio-img-container">
-						<img src="/imgs/4-port.png" alt="" class="portfolio-image" />
+						<video width="360px" controls>
+							<source
+								src="/imgs/Eduarda Cysneiros - 101067.mp4"
+								type="video/mp4"
+							/>
+						</video>
 						<img src="/imgs/5-port.png" alt="" class="portfolio-image-2" />
 					</div>
 					<div class="portfolio-text">
-						<p>Graphic Design</p>
-						<p>Metaphors And Visual Thinking Basic Design Project, 2020/2021</p>
-						<a href="/">more</a>
+						<strong>Design Gráfico</strong>
+						<div class="portfolio-text-item">
+							<p>Cover Me Projeto em Design II, 2020/2021</p>
+							<p class="content">
+								Na vertente do design de comunicação fomos introduzidos a mais
+								um desafio, o confronto entre os a cultura visual com o meio de
+								expressão gráfica contemporânea, no qual foi proposto realizar
+								uma interpretação contemporânea de uma capa de álbum, ou seja
+								uma “capa de álbum digital”, adequando-se as tendências
+								modernas, onde os alunos possuíam total liberdade na escolha da
+								música a qual trabalhariam, além da técnica de expressão visual
+								a qual desejaria seguir, baseando-se no formato existindo no
+								Spotify Canvas, o vídeo deveria conter mais de 50% de sua
+								autoria e possuir duração de 15 a 30 segundos. Neste projeto
+								buscou-se a reflexão associadas da história da cultura visual em
+								relação a cultura da música, associada ao olhar critico e
+								individual a respeito as novas formas de expressões, além de
+								levar em consideração a coerência acerca da interpretação visual
+								em conformidade com a mensagem retratada pela peça escolhida.
+								Para sua entrega foi necessário o Spotify Code, para
+								identificação da música pelos demais, capa digital, vídeo em
+								formato h264, extensão .mp4 e orientação vertical, além de
+								confecionar um suporte físico de cartão craft, em formato 20 x
+								20 cm, impresso e a cores desenhado pelo próprio aluno, que
+								possuísse uma abertura das dimensões do seu ecrã de telemóvel
+								para que fosse possível a exibição de seu vídeo através desta
+								moldura em uma exposição. Neste projeto, a vertente escolhida
+								foi a exploração de uma nova tecnologia, na qual o foco central
+								era a manipulação de uma nova ferramenta transformando a música
+								escolhida como suporte da animação a ser reproduzida. Para isto,
+								foi necessária o estudo e manipulação de programas de modelagem
+								3D a fim de achar o que melhor representava a estética desejada,
+								nisso foi utilizado o Cinema 4D para a confeção da animação e a
+								música escolhida que melhor retratou a animação desenvolvida foi
+								a “The Shape Of Water” – Alexandre Desplat.
+							</p>
+							<button onClick="readMore(this)">Leia mais</button>
+						</div>
 					</div>
 				</div>
 				<div class="portfolio-item">
 					<div class="portfolio-text">
-						<p>Product Design</p>
-						<p>
-							Street Furniture Shelter For Bus Stop, Project Design 2, 2021/202
-						</p>
-						<a href="/">more</a>
+						<strong>Design de Produto</strong>
+						<div class="portfolio-text-item">
+							<p>Mobiliário Urbano Project Design 2, 2021/2022</p>
+							<p class="content">
+								Na área do Design de Produto, foi proposto a criação de um
+								mobiliário urbano, neste caso um abrigo para paragem de
+								autocarro. Para a realização deste projeto, foi imprescindível
+								busca por exemplos e analise de abrigos já existentes, além da
+								compreensão das tecnologias de extrusão do alumínio e fundição
+								de metais para a confeção da mesma. Este projeto buscava o
+								desenho de um abrigo que possuísse uma cobertura, um banco de
+								repouso e laterais corta-vento, porém não se fazia necessário
+								qualquer tipo de sinalização ou sistemas de iluminações, podendo
+								ser utilizado, para além de materiais metálicos, madeiras e seus
+								derivados, vidros e outros materiais transparentes ou painéis
+								metálicos em sues revestimentos. Além disto, foi necessário a
+								confeção de um mural de pesquisa, memoria descritiva,
+								representação visual da proposta que demonstre os materiais
+								usados e acabamentos escolhidos, além de uma maquete à uma
+								escala reduzida, para poder validar a proposta, e um dossier
+								técnico para indicar os matérias e sistemas de fixações
+								escolhidos além do desenho com as cotas volumétricas. Esta
+								paragem de autocarro foi projetada visando principalmente as
+								condições climáticas da cidade de Aveiro. Sendo confecionada
+								maioritariamente por perfis de alumínios extrudido, tanto para
+								estruturação e apoio para as costas e consequentemente proteção
+								das peças em vidro, e vidro temperado, conta também com peças em
+								ferro fundido, tanto para a fixação ao chão quando para o
+								encaixe dos perfis de alumínio, para os assentos do banco foi
+								optado por madeira, tanto pela sua durabilidade quanto por não
+								se resfriar com tanta facilidade quanto outros matérias, além de
+								ser escolhido utilizar para a cobertura placas de policarbonato
+								alveolar, garantindo a passagem de luz porém protegendo dos
+								raios UV.
+							</p>
+							<button onClick="readMore(this)">Leia mais</button>
+						</div>
 					</div>
+
 					<div class="portfolio-img-container-4">
 						<img src="/imgs/7-port.png" alt="" class="portfolio-image-7" />
-					</div>
-					<div class="portfolio-img-container-8">
 						<img src="/imgs/8-port.png" alt="" class="portfolio-image-8" />
 					</div>
 				</div>
@@ -139,27 +258,27 @@
 
 		<section class="contact" id="contact">
 			<header class="contact-header">
-				<p>Say hi!</p>
+				<p>Diga oi!</p>
 			</header>
 
 			<div class="contact-grid-info">
 				<div class="contact-grid-info-text">
 					<p>
-						Looking to start a new project or just want to say hi? Send me an
-						email and i`ll do my best to replay within 24 hours!
+						A procura de de começar um projeto ou somente dizer ola?, me mande
+						um email e farei o meu melhor para enviar em até 24 horas!
 					</p>
 					<p>
-						If contact forms aren`t your thing, feel free to send me an email at
-						cysneiros@ua.pt
+						Se formulários não são seu estilo, sinta-se livre em me contatar via
+						o email: cysneiros@ua.pt
 					</p>
 				</div>
 				<div class="form-button">
 					<form action="submit" class="contact-form">
 						<div class="form-div">
-							<label for="name">Name*</label>
+							<label for="name">Primeiro nome*</label>
 							<input
 								type="text"
-								placeholder="first name"
+								placeholder="Primeiro nome"
 								id="name"
 								name="name"
 								class="contact-form-input"
@@ -167,10 +286,10 @@
 						</div>
 
 						<div class="form-div">
-							<label for="lastName">Last name*</label>
+							<label for="lastName">Ultimo nome*</label>
 							<input
 								type="text"
-								placeholder="Last name"
+								placeholder="Ultimo nome"
 								id="lastName"
 								name="LastName"
 								class="contact-form-input"
@@ -178,10 +297,10 @@
 						</div>
 
 						<div class="form-div">
-							<label for="inquiry">Inquiry*</label>
+							<label for="inquiry">Assunto*</label>
 							<input
 								type="text"
-								placeholder="Collab/Client"
+								placeholder="Cliente/colaboração"
 								id="inquiry"
 								name="inquiry"
 								class="contact-form-input"
@@ -198,16 +317,16 @@
 							/>
 						</div>
 						<div class="grid-4">
-							<label for="message">Message*</label>
+							<label for="message">Mensagem*</label>
 							<textarea
-								placeholder="your message"
+								placeholder="Sua mensagem"
 								id="email"
 								name="email"
 								class="contact-form-input"
 							></textarea>
 						</div>
 					</form>
-					<button class="form-button" type="submit">Send</button>
+					<button class="form-button" type="submit">Enviar</button>
 				</div>
 			</div>
 		</section>
